@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Encrypt/Decrypt</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">    
+    <title>Encrypt/Decrypt </title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <div class="workarea">
+        <h2>Encrypt / Decrypt (β version)</h2>
+        <select id="type" disabled>
+            <option value="custom_key" selected>custom key enc</option>
+        </select>
+        <br>
+        <br>
+        <label>Message:</label><br>
+        <input type="text" id="message"><br>
+        <label>Key:</label><br>
+        <input type="text" id="key"><br>
 
-  <h2>Encrypt / Decrypt</h2>
-  <label>Message:</label><br>
-  <input type="text" id="message"><br>
-  <label>Key:</label><br>
-  <input type="text" id="key"><br>
+        <button onclick="encrypt()">Encrypt</button>
+        <button onclick="decrypt()">Decrypt</button>
 
-  <button onclick="encrypt()">Encrypt</button>
-  <button onclick="decrypt()">Decrypt</button>
-
-  <div id="output"></div>
-  <script src="script.js"></script>
+        <div id="output"></div>
+        <script src="script.js"></script>
+    </div>
 </body>
+
 </html>
