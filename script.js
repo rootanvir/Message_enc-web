@@ -31,3 +31,9 @@ function getKeyArray(key) {
     }
     document.getElementById('output').innerHTML = "<span style='color:green'>Decrypted: " + msg + "</span>";
   }
+  function clearFields()
+  {
+    document.getElementById('message').value = "";
+    document.getElementById('key').value = "";
+    document.getElementById('output').innerHTML = "";
+  }
