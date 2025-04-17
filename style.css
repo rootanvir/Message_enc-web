@@ -64,7 +64,7 @@ button {
 #btnarea button{
     flex:1;
 }
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     body {
         margin: 0px;
 
