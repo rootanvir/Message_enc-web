@@ -1,20 +1,23 @@
 /* style.css */
 body {
-    margin-inline: 50px;
     font-family: Arial, sans-serif;
-    padding: 20px;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     min-height: 100vh;
 }
 
-input[type="text"] {
+#message{
     width: 90%;
     padding: 8px;
-    margin: 8px 0px;
     font-size: 16px;
     
+}
+#key{
+    width: 92%;
+    height: 35px;
+    font-size: 16px;
+    margin-bottom: 30px;
 }
 
 button {
@@ -35,8 +38,54 @@ button {
 
 .workarea {
     background-color: antiquewhite;
-    width: 650px;
+    width: 500px;
+    
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#enc{
+    background-color: rgb(92, 43, 62);
+    color: #f4f4f4;
+}
+#dec{
+    background-color: rgb(60, 110, 93);
+    color: #f4f4f4;
+}
+#clear{
+    background-color: rgb(70, 94, 140);
+    color: #f4f4f4;
+}
+#btnarea{
+    width: 96%;
+    display: flex;
+    gap: 10px; 
+}
+#btnarea button{
+    flex:1;
+}
+@media (max-width: 768px) {
+    body {
+        margin: 0px;
+
+    }
+
+    .workarea {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    #message, #key {
+        width: 95%;
+        box-sizing: border-box;
+    }
+    #btnarea{
+        display: block;
+       
+    }
+    #btnarea button {
+        width: 100%;
+        margin: 8px 0px;
+    }
 }
